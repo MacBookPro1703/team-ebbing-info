@@ -204,6 +204,15 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 #lb .zu{position:absolute;top:calc(14px + env(safe-area-inset-top));right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:#111;font-size:20px;cursor:pointer;z-index:2}
 h1,h2,h3,h4,.brand,.btn,.eyebrow,.pill,.zahl b,.glied b,.ph b,.bs b,.k .rolle,.film .tag,.cent,.auftrag h3,.regler h3,.tf h3,.stand button,.uhr span,.rund,.zaehler{font-family:Archivo,"Segoe UI",system-ui,sans-serif}
 .brand span{color:var(--or)}nav img{border-radius:6px}
+
+/* Umschalter Team / Für Kunden / Einrichten intern – auf allen drei Seiten gleich */
+.umsch{display:flex;gap:4px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:4px;margin-left:22px;flex:0 0 auto}
+.umsch a{padding:8px 15px;border-radius:999px;font-weight:800;font-size:13px;text-decoration:none;color:var(--tx);white-space:nowrap;line-height:1.2}
+.umsch a:hover{background:rgba(255,255,255,.1)}
+.umsch a[aria-current=page],.umsch a[aria-current=page]:hover{background:var(--or);color:#1B1E22}
+@media(max-width:1080px){nav .links a.opt{display:none}}
+@media(max-width:720px){html{scroll-padding-top:130px}nav .w{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px;row-gap:10px}.umsch{flex:1 0 100%;margin-left:0}.umsch a{flex:1 1 auto;text-align:center;padding:9px 6px;font-size:12.5px}}
+.umsch a{font-family:Archivo,"Segoe UI",system-ui,sans-serif}
 </style>
 </head>
 <body>
@@ -211,8 +220,8 @@ h1,h2,h3,h4,.brand,.btn,.eyebrow,.pill,.zahl b,.glied b,.ph b,.bs b,.k .rolle,.f
 <nav><div class="w">
 <img src="ep.png" alt="Ebbing Project">
 <div class="brand">EBBING <span>PROJECT</span><small>Team Ebbing</small></div>
-<div class="links"><a class="opt" href="#film">Film</a><a class="opt" href="#team">Team</a><a class="opt" href="#buero">Planungsbüro</a><a class="opt" href="#handbuch">Handbuch</a>
-<a class="btn s" href="Handbuch_Team-Ebbing.pdf" target="_blank" rel="noopener">PDF</a></div>
+<div class="links"><a class="opt" href="#film">Film</a><a class="opt" href="#team">Kollegen</a><a class="opt" href="#buero">Planungsbüro</a><a class="opt" href="#handbuch">Handbuch</a><a class="opt" href="Handbuch_Team-Ebbing.pdf" target="_blank" rel="noopener">PDF</a></div>
+<div class="umsch" role="navigation" aria-label="Seiten"><a href="./" aria-current="page">Team</a><a href="vertrieb/">Für Kunden</a><a href="onboarding/">Einrichten intern</a></div>
 </div></nav>
 
 <header class="hero"><div class="w">
